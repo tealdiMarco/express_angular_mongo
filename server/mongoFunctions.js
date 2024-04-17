@@ -1,7 +1,7 @@
 "use strict"
 
 let mongo = require("mongodb");
-let mongoClient = mongo.mongoClient;
+let mongoClient = mongo.MongoClient;
 const CONNECTIONSTRING = "mongodb://127.0.0.1:27017";
 
 let mongoFunctions = function(){    };

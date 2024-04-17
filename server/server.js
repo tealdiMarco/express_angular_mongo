@@ -21,7 +21,7 @@ app.use(cors());
 
 app.use(function(req,res,next){
     let d = new Date();
-    console.log(d.toLocaleDateString() + " >>> " + req.method + " : " + req.originalUrl())
+    console.log(d.toLocaleDateString() + " >>> " + req.method + " : " + req.originalUrl)
     if(Object.keys(req.query).length != 0)
         console.log("Parametri GET : "+JSON.stringify(req.query));
     if(Object.keys(req.body).length != 0)
